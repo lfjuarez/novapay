@@ -21,6 +21,23 @@ El hash tiene que ser:
 
 Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Lab Caso Novapay resuelto](https://youtu.be/POC5iLnjFTE) muestra los 10 pasos.
 
+## Parte 2 · Contención y hardening del servidor (Clase 6)
+
+El atacante accedió con la cuenta `soporte`. ¿Qué dejó en el servidor para volver? Investigá la persistencia, cortá el acceso y endurecé la configuración en tu propio Cloud Shell:
+
+```
+wget https://lfjuarez.github.io/novapay/caso-servidor.zip
+sha256sum caso-servidor.zip
+```
+
+El hash tiene que ser:
+
+```
+324c279d88a99fe6fcd95d96c40345a878052b5d881314e8f53e3367c45b4f11  caso-servidor.zip
+```
+
+Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet y todo se borra al reiniciarla. Al final, `sudo bash verificar.sh` comprueba los siete controles.
+
 ## Contenido
 
 | Archivo | Qué es |
@@ -30,5 +47,8 @@ Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una termi
 | `guia.pdf` | La guía paso a paso |
 | `hoja-de-comandos.pdf` | Los comandos de la clase en una página |
 | `practica.zip` | Archivos para practicar los comandos básicos (el video de comandos los usa) |
+| `caso-servidor.zip` | Parte 2: `preparar.sh`, `verificar.sh` y `notas-servidor.txt` |
+| `caso-servidor.zip.sha256` | El hash publicado de la Parte 2 |
+| `guia-servidor.pdf` | La guía de la Parte 2 |
 
 Usalo solo para aprender: escaneá y probá únicamente en tus equipos o con permiso escrito.
