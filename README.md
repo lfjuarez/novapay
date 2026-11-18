@@ -29,5 +29,6 @@ Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf).
 | `caso-novapay.zip.sha256` | El hash publicado, para verificar la descarga |
 | `guia.pdf` | La guía paso a paso |
 | `hoja-de-comandos.pdf` | Los comandos de la clase en una página |
+| `practica.zip` | Archivos para practicar los comandos básicos (el video de comandos los usa) |
 
 Usalo solo para aprender: escaneá y probá únicamente en tus equipos o con permiso escrito.
