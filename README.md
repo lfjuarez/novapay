@@ -19,7 +19,7 @@ El hash tiene que ser:
 895ea610266e80fd8b76ffcc5a7a77520d0e768d3b2ed973b0e0f396a6dc4970  caso-novapay.zip
 ```
 
-Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf).
+Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos).
 
 ## Contenido
 
