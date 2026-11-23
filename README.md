@@ -38,6 +38,8 @@ El hash tiene que ser:
 
 Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet y todo se borra al reiniciarla. Al final, `sudo bash verificar.sh` comprueba los siete controles.
 
+Video con los 10 pasos resueltos: [Lab Caso Novapay · Parte 2 resuelto](https://youtu.be/n20AkyxLG00). Después de intentarlo, compará con [respuestas-servidor.pdf](respuestas-servidor.pdf).
+
 ## Contenido
 
 | Archivo | Qué es |
@@ -50,5 +52,6 @@ Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `p
 | `caso-servidor.zip` | Parte 2: `preparar.sh`, `verificar.sh` y `notas-servidor.txt` |
 | `caso-servidor.zip.sha256` | El hash publicado de la Parte 2 |
 | `guia-servidor.pdf` | La guía de la Parte 2 |
+| `respuestas-servidor.pdf` | Lo que tenía que aparecer en cada paso y las respuestas sugeridas de la Parte 2 |
 
 Usalo solo para aprender: escaneá y probá únicamente en tus equipos o con permiso escrito.
