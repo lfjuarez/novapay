@@ -38,7 +38,7 @@ El hash tiene que ser:
 
 Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet ni reinicia SSH, y las contraseñas de los usuarios de ejemplo se generan al azar, sin mostrarse. Al final, `sudo bash verificar.sh` comprueba los siete controles y te da un código de verificación único para tu usuario de Cloud Shell: entregá el código y el usuario.
 
-Video con los 10 pasos resueltos: [Lab Caso Novapay · Parte 2 resuelto](https://youtu.be/n20AkyxLG00). Después de intentarlo, compará con [respuestas-servidor.pdf](respuestas-servidor.pdf).
+Video con los 10 pasos resueltos: [Lab Caso Novapay · Parte 2 resuelto](https://youtu.be/M10w0hkFoYo). Después de intentarlo, compará con [respuestas-servidor.pdf](respuestas-servidor.pdf).
 
 ## Contenido
 
