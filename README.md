@@ -1,6 +1,6 @@
 # Caso Novapay · La evidencia del servidor
 
-Laboratorio de la Clase 5 del curso de Ciberseguridad: primeros pasos en la terminal de Linux con un objetivo de analista. Los datos son inventados y las IP pertenecen a rangos reservados para documentación (RFC 5737).
+Laboratorio de la Clase 5 del curso de Ciberseguridad: primeros pasos en la terminal de Linux con un objetivo de analista. Los datos son inventados. La IP del atacante, 45.140.192.242, es real: está reportada públicamente por ataques de fuerza bruta contra SSH (AbuseIPDB, GreyNoise, VirusTotal) y la usamos para practicar cómo se investiga una IP. El ataque a Novapay es ficticio. Las demás IP externas pertenecen a rangos reservados para documentación (RFC 5737).
 
 **El caso.** La cuenta `soporte` cambió la página de inicio del sitio de Novapay durante la madrugada y nadie del equipo lo hizo. Con el registro de inicios de sesión del servidor, respondé: ¿alguien accedió sin autorización?, ¿desde qué IP? y ¿con qué cuenta?
 
@@ -16,7 +16,7 @@ sha256sum caso-novapay.zip
 El hash tiene que ser:
 
 ```
-895ea610266e80fd8b76ffcc5a7a77520d0e768d3b2ed973b0e0f396a6dc4970  caso-novapay.zip
+ae454dbcae839ef4b7a2e0e2166b8405f401dbfdf837f646b1a7396c32f654cd  caso-novapay.zip
 ```
 
 Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Lab Caso Novapay resuelto](https://youtu.be/POC5iLnjFTE) muestra los 10 pasos.
