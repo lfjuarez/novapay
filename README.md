@@ -33,7 +33,7 @@ sha256sum caso-servidor.zip
 El hash tiene que ser:
 
 ```
-143d67b2222e81ef41f3d11f16f22961ab9d0dbfeeb51b96e14365b49cb08960  caso-servidor.zip
+6e3d97ebe748f7d8e484101df9c9b652c6f2b1e0245a7fcbaa89d56625840f94  caso-servidor.zip
 ```
 
 Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet ni reinicia SSH, y las contraseñas de los usuarios de ejemplo se generan al azar, sin mostrarse. Al final, `sudo bash verificar.sh` comprueba los siete controles y te da un código de verificación único para tu usuario de Cloud Shell: entregá el código y el usuario.
