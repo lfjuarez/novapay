@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Preguntas y aportes · Curso de Ciberseguridad</title>
+<title>Consultas y aportes · Curso de Ciberseguridad</title>
 <meta name="description" content="Dejá tu pregunta o un aporte para el curso de Ciberseguridad. Es anónimo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -72,8 +72,8 @@
 <div class="grid"></div>
 <main>
   <div class="kicker">Curso de Ciberseguridad · Ambox</div>
-  <h1>Preguntá sin vueltas.<br><em>Es anónimo.</em></h1>
-  <p class="lead">Dejá cualquier duda del curso, por simple que te parezca, o compartí un link, una herramienta o una noticia que te haya llamado la atención. Las respuestas se publican en el documento del curso y las comentamos al comienzo de cada clase.</p>
+  <h1>Consultas y aportes del curso<br><em>Tu pregunta es anónima.</em></h1>
+  <p class="lead">En ciberseguridad, preguntar es parte del trabajo: los mejores analistas son los que no se quedan con la duda. Escribí acá cualquier consulta sobre las clases, los laboratorios o los conceptos, aunque te parezca básica, porque seguramente a otros compañeros les pasa lo mismo. También podés compartir un recurso, una herramienta o una noticia que te haya parecido interesante. Respondo cada consulta en el documento del curso y las comentamos al comienzo de la clase siguiente.</p>
   <div class="badges">
     <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Anónimo: sin nombre ni correo</span>
     <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Lleva 1 minuto</span>
@@ -83,25 +83,25 @@
     <div class="bar"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>alumno@ciberseguridad:~$ ./preguntar</span></div>
     <form id="f" novalidate>
       <div class="field">
-        <label for="q"><b>Tu pregunta</b></label>
+        <label for="q"><b>Tu consulta</b></label>
         <textarea id="q" name="entry.1963402827" placeholder="Por ejemplo: ¿qué diferencia hay entre un hash y un cifrado?"></textarea>
       </div>
       <div class="field">
-        <label for="a"><b>Un aporte para el grupo</b> <span class="opt">(opcional)</span></label>
-        <textarea id="a" name="entry.1529085313" style="min-height:90px" placeholder="Un link, una herramienta o una noticia que quieras compartir"></textarea>
+        <label for="a"><b>Un recurso para compartir con el grupo</b> <span class="opt">(opcional)</span></label>
+        <textarea id="a" name="entry.1529085313" style="min-height:90px" placeholder="Un link, una herramienta o una noticia de ciberseguridad"></textarea>
         <div class="hint">No pongas datos personales ni contraseñas. Lo que escribas puede publicarse, sin tu nombre, en el documento del curso.</div>
       </div>
       <div class="row">
         <div class="err" id="err" role="alert"></div>
-        <button type="submit" id="btn">Enviar</button>
+        <button type="submit" id="btn">Enviar consulta</button>
       </div>
     </form>
     <div class="ok" id="ok" aria-live="polite">
       <div class="check"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6FD3C9" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
       <h2>¡Recibido!</h2>
-      <p>Gracias. La vamos a responder en el documento «Preguntas y respuestas del curso» y la comentamos al comienzo de la próxima clase.</p>
+      <p>Gracias por tu consulta. La voy a responder en el documento «Preguntas y respuestas del curso» y la comentamos al comienzo de la próxima clase.</p>
       <p class="prompt">alumno@ciberseguridad:~$ <span class="cursor"></span></p>
-      <button type="button" id="otra">Enviar otra</button>
+      <button type="button" id="otra">Enviar otra consulta</button>
     </div>
   </div>
 
@@ -120,7 +120,7 @@
   f.addEventListener('submit', async (e) => {
     e.preventDefault();
     const q = f.elements['entry.1963402827'].value.trim(), a = f.elements['entry.1529085313'].value.trim();
-    if (!q && !a) { err.textContent = 'Escribí una pregunta o un aporte antes de enviar.'; return; }
+    if (!q && !a) { err.textContent = 'Escribí una consulta o un recurso antes de enviar.'; return; }
     err.textContent = ''; btn.disabled = true; btn.textContent = 'Enviando…';
     const data = new URLSearchParams(); data.append('entry.1963402827', q); data.append('entry.1529085313', a);
     try {
@@ -128,7 +128,7 @@
       f.style.display = 'none'; ok.style.display = 'block'; f.reset();
     } catch (x) {
       err.textContent = 'No se pudo enviar. Probá de nuevo en un momento.';
-    } finally { btn.disabled = false; btn.textContent = 'Enviar'; }
+    } finally { btn.disabled = false; btn.textContent = 'Enviar consulta'; }
   });
   document.getElementById('otra').addEventListener('click', () => { ok.style.display = 'none'; f.style.display = 'block'; });
 </script>
