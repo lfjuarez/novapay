@@ -19,7 +19,7 @@ El hash tiene que ser:
 ae454dbcae839ef4b7a2e0e2166b8405f401dbfdf837f646b1a7396c32f654cd  caso-novapay.zip
 ```
 
-Seguí los 10 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Lab Caso Novapay resuelto](https://youtu.be/POC5iLnjFTE) muestra los 10 pasos.
+Seguí los 11 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Lab Caso Novapay resuelto](https://youtu.be/JzuwpTv-mPk) muestra los 11 pasos.
 
 ## Parte 2 · Contención y hardening del servidor (Clase 6)
 
@@ -36,7 +36,7 @@ El hash tiene que ser:
 6e3d97ebe748f7d8e484101df9c9b652c6f2b1e0245a7fcbaa89d56625840f94  caso-servidor.zip
 ```
 
-Seguí los 10 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet ni reinicia SSH, y las contraseñas de los usuarios de ejemplo se generan al azar, sin mostrarse. Al final, `sudo bash verificar.sh` comprueba los siete controles y te da un código de verificación único para tu usuario de Cloud Shell: entregá el código y el usuario.
+Seguí los 11 pasos de la guía: [guia-servidor.pdf](guia-servidor.pdf). Leé `preparar.sh` antes de ejecutarlo con `sudo`: solo cambia tu máquina de práctica de Cloud Shell, no envía nada a internet ni reinicia SSH, y las contraseñas de los usuarios de ejemplo se generan al azar, sin mostrarse. Al final, `sudo bash verificar.sh` comprueba los siete controles y te da un código de verificación único para tu usuario de Cloud Shell: entregá el código y el usuario.
 
 Video con los 10 pasos resueltos: [Lab Caso Novapay · Parte 2 resuelto](https://youtu.be/SP-O6zvebMM). Después de intentarlo, compará con [respuestas-servidor.pdf](respuestas-servidor.pdf).
 
