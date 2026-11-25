@@ -1,4 +1,4 @@
-# Caso Novapay · La evidencia del servidor
+# Caso Novapay · Análisis forense de un servidor comprometido
 
 Laboratorio de la Clase 5 del curso de Ciberseguridad: primeros pasos en la terminal de Linux con un objetivo de analista. Los datos son inventados. La IP del atacante, 45.140.192.242, es real: está reportada públicamente por ataques de fuerza bruta contra SSH (AbuseIPDB, GreyNoise, VirusTotal) y la usamos para practicar cómo se investiga una IP. El ataque a Novapay es ficticio. Las demás IP externas pertenecen a rangos reservados para documentación (RFC 5737).
 
@@ -19,7 +19,7 @@ El hash tiene que ser:
 ae454dbcae839ef4b7a2e0e2166b8405f401dbfdf837f646b1a7396c32f654cd  caso-novapay.zip
 ```
 
-Seguí los 11 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Lab Caso Novapay resuelto](https://youtu.be/JzuwpTv-mPk) muestra los 11 pasos.
+Seguí los 11 pasos de la guía: [guia.pdf](guia.pdf). Si nunca usaste una terminal, mirá antes el video [Linux para analistas · Comandos básicos uno por uno](https://youtu.be/AKh9FE14jzs) (7 minutos). Si te trabás, el video [Análisis forense de un servidor comprometido, resuelto](https://youtu.be/JzuwpTv-mPk) muestra los 11 pasos.
 
 ## Parte 2 · Contención y hardening del servidor (Clase 6)
 
