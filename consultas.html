@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consultas y aportes · Curso de Ciberseguridad</title>
-<meta name="description" content="Dejá tu pregunta o un aporte para el curso de Ciberseguridad. Es anónimo.">
+<meta name="description" content="Dejá tu consulta o un aporte para el curso de Ciberseguridad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -38,10 +38,10 @@
   label{display:block;font:600 14px JetBrains Mono,monospace;color:var(--teal2);margin:4px 0 10px}
   label b{color:var(--ink)}
   .opt{color:var(--muted);font-weight:400}
-  textarea{width:100%;min-height:130px;resize:vertical;background:#0A1A2C;border:1px solid #23415F;border-radius:10px;
+  input,textarea{width:100%;resize:vertical;background:#0A1A2C;border:1px solid #23415F;border-radius:10px;
       color:var(--ink);font:15.5px/1.55 Inter,sans-serif;padding:14px 16px;outline:none;transition:border-color .15s,box-shadow .15s}
-  textarea::placeholder{color:#5F7890}
-  textarea:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,159,148,.18)}
+  input::placeholder,textarea::placeholder{color:#5F7890}
+  input:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,159,148,.18)}
   .field{margin-bottom:22px}
   .hint{font-size:13px;color:#7F96AE;margin-top:8px}
   .row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -72,10 +72,10 @@
 <div class="grid"></div>
 <main>
   <div class="kicker">Curso de Ciberseguridad · Ambox</div>
-  <h1>Consultas y aportes del curso<br><em>Tu pregunta es anónima.</em></h1>
-  <p class="lead">En ciberseguridad, preguntar es parte del trabajo: los mejores analistas son los que no se quedan con la duda. Escribí acá cualquier consulta sobre las clases, los laboratorios o los conceptos, aunque te parezca básica, porque seguramente a otros compañeros les pasa lo mismo. También podés compartir un recurso, una herramienta o una noticia que te haya parecido interesante. Respondo cada consulta en el documento del curso y las comentamos al comienzo de la clase siguiente.</p>
+  <h1>Consultas y aportes del curso<br><em>Preguntá lo que necesites.</em></h1>
+  <p class="lead">En ciberseguridad, preguntar es parte del trabajo: los mejores analistas son los que no se quedan con la duda. Escribí acá cualquier consulta sobre las clases, los laboratorios o los conceptos, aunque te parezca básica, porque seguramente a otros compañeros les pasa lo mismo. También podés compartir un recurso, una herramienta o una noticia que te haya parecido interesante. Respondo cada consulta en el documento del curso, sin tu nombre, y las comentamos al comienzo de la clase siguiente.</p>
   <div class="badges">
-    <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Anónimo: sin nombre ni correo</span>
+    <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Tu nombre no se publica</span>
     <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Lleva 1 minuto</span>
   </div>
 
@@ -83,13 +83,17 @@
     <div class="bar"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>alumno@ciberseguridad:~$ ./preguntar</span></div>
     <form id="f" novalidate>
       <div class="field">
+        <label for="n"><b>Tu nombre y apellido</b></label>
+        <input id="n" name="entry.1182943804" autocomplete="name" placeholder="Como figurás en el curso">
+      </div>
+      <div class="field">
         <label for="q"><b>Tu consulta</b></label>
-        <textarea id="q" name="entry.1963402827" placeholder="Por ejemplo: ¿qué diferencia hay entre un hash y un cifrado?"></textarea>
+        <textarea id="q" style="min-height:130px" name="entry.1963402827" placeholder="Por ejemplo: ¿qué diferencia hay entre un hash y un cifrado?"></textarea>
       </div>
       <div class="field">
         <label for="a"><b>Un recurso para compartir con el grupo</b> <span class="opt">(opcional)</span></label>
         <textarea id="a" name="entry.1529085313" style="min-height:90px" placeholder="Un link, una herramienta o una noticia de ciberseguridad"></textarea>
-        <div class="hint">No pongas datos personales ni contraseñas. Lo que escribas puede publicarse, sin tu nombre, en el documento del curso.</div>
+        <div class="hint">No pongas contraseñas ni datos sensibles. Tu nombre lo ve solo el docente: en el documento del curso las consultas se publican sin nombre.</div>
       </div>
       <div class="row">
         <div class="err" id="err" role="alert"></div>
@@ -112,17 +116,18 @@
       <small>Material</small><b>Caso Novapay</b><span>Guías, videos y hojas de comandos de los laboratorios.</span></a>
   </div>
 
-  <footer>Este formulario no pide tu nombre ni tu correo, y las respuestas le llegan al docente sin datos de quién las envió.</footer>
+  <footer>Tu nombre le llega solo al docente. En el documento «Preguntas y respuestas del curso» las consultas se publican sin nombre.</footer>
 </main>
 <script>
   const ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSdihmgofb_tzJipmzLCZ18BixLuX1pq9xx0wuCi7jSurd3rkA/formResponse";
   const f = document.getElementById('f'), ok = document.getElementById('ok'), err = document.getElementById('err'), btn = document.getElementById('btn');
   f.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const q = f.elements['entry.1963402827'].value.trim(), a = f.elements['entry.1529085313'].value.trim();
+    const n = f.elements['entry.1182943804'].value.trim(), q = f.elements['entry.1963402827'].value.trim(), a = f.elements['entry.1529085313'].value.trim();
+    if (!n) { err.textContent = 'Escribí tu nombre y apellido.'; return; }
     if (!q && !a) { err.textContent = 'Escribí una consulta o un recurso antes de enviar.'; return; }
     err.textContent = ''; btn.disabled = true; btn.textContent = 'Enviando…';
-    const data = new URLSearchParams(); data.append('entry.1963402827', q); data.append('entry.1529085313', a);
+    const data = new URLSearchParams(); data.append('entry.1182943804', n); data.append('entry.1963402827', q); data.append('entry.1529085313', a);
     try {
       await fetch(ACTION, { method: 'POST', mode: 'no-cors', body: data });
       f.style.display = 'none'; ok.style.display = 'block'; f.reset();
